@@ -34,6 +34,14 @@ size = Vector3(26.2, 1, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.300001, 2.3999996, -1.7)
 size = Vector3(5.3, 4, 1)
 
+[node name="CSGBox3D9" type="CSGBox3D" parent="." unique_id=47654694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.900002, 1.0999995, 7.000001)
+size = Vector3(3.3, 1.4, 0.4)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=2073662741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1999993, 1.1999998, 5.1000004)
+size = Vector3(5.1, 1.4, 0.4)
+
 [node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=858908690]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1499996, 2.3, -1.7)
 size = Vector3(5.1, 4.2000003, 1)
