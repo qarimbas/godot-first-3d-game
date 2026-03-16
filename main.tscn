@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwf7i20iccm67"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_qu75m"]
+[ext_resource type="PackedScene" uid="uid://ds8x8ejac3uhy" path="res://models/chest_gold/chest_gold.glb" id="2_aicsc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yroys"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -85,3 +86,6 @@ size = Vector3(15.1, 4.2000003, 1)
 
 [node name="ProtoController" parent="." unique_id=10301292 instance=ExtResource("1_qu75m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0.5, 9)
+
+[node name="chest_gold2" parent="." unique_id=543811753 instance=ExtResource("2_aicsc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.1000004, 0.5, 8.8)
