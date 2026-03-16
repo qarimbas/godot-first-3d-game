@@ -1,6 +1,28 @@
 [gd_scene format=3 uid="uid://cwf7i20iccm67"]
 
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_qu75m"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yroys"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_qu75m"]
+sky_material = SubResource("ProceduralSkyMaterial_yroys")
+
+[sub_resource type="Environment" id="Environment_aicsc"]
+background_mode = 2
+sky = SubResource("Sky_qu75m")
+tonemap_mode = 2
+glow_enabled = true
+
 [node name="Main" type="Node3D" unique_id=143439571]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1499715516]
+environment = SubResource("Environment_aicsc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1589295656]
+transform = Transform3D(-0.66341394, -0.6531008, -0.36515933, -0.55667037, 0.10468693, 0.82411087, -0.50000006, 0.75, -0.43301266, 0, 11.2, 0)
+shadow_enabled = true
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1733479918]
 use_collision = true
@@ -60,3 +82,6 @@ size = Vector3(9, 4.3, 1)
 [node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1457733964]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -7.25, 2.3, 6.2999997)
 size = Vector3(15.1, 4.2000003, 1)
+
+[node name="ProtoController" parent="." unique_id=10301292 instance=ExtResource("1_qu75m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0.5, 9)
