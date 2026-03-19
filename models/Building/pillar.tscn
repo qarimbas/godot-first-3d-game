@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dcotsjvrll3ry"]
+
+[ext_resource type="PackedScene" uid="uid://di6eiah7rcqwp" path="res://addons/brackeys_3d_game_assets/dungeon_assets/building/pillar.glb" id="1_5x3cw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_csa8k"]
+height = 4.0
+radius = 0.8
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1993052504]
+
+[node name="pillar2" parent="." unique_id=870041676 instance=ExtResource("1_5x3cw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=950302828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("CylinderShape3D_csa8k")

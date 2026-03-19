@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bc3bv40mer8bf"]
+
+[ext_resource type="PackedScene" uid="uid://cm2pdrprvjv2x" path="res://addons/brackeys_3d_game_assets/dungeon_assets/building/floor_wood.glb" id="1_jufa8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dnvcb"]
+size = Vector3(4, 0.2, 4)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=971818114]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=730470596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9802322e-08, 0)
+shape = SubResource("BoxShape3D_dnvcb")
+
+[node name="floor_wood" parent="." unique_id=1668298008 instance=ExtResource("1_jufa8")]
