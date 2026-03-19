@@ -300,7 +300,10 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.70
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.7000003, 0, 6)
 
 [node name="StaticBody3D25" parent="Room1" unique_id=2078927468 instance=ExtResource("15_wsu2k")]
-transform = Transform3D(-3.059797e-08, 0, 0.17424, 0, 1, 0, -0.7, 0, -7.616272e-09, 3.9999986, 0, 4.2)
+transform = Transform3D(-2.4478377e-08, 0, 0.17424, 0, 1, 0, -0.56, 0, -7.616272e-09, 3.999998, 0, 3.9999995)
+
+[node name="CollisionShape3D" parent="Room1/StaticBody3D25" index="0" unique_id=730470596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35000008, 0, -0.050000012)
 
 [node name="StaticBody3D5" parent="Room1" unique_id=1079521566 instance=ExtResource("15_wsu2k")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.2999997, 0, 2.1)
@@ -361,3 +364,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9000001, 0.5, 14.3)
 
 [node name="StaticBody3D16" parent="." unique_id=830152770 instance=ExtResource("16_k12tt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9, 0.5, 14.3)
+
+[editable path="Room1/StaticBody3D25"]
