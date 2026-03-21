@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://e0d2da4w2us"]
+
+[ext_resource type="PackedScene" uid="uid://b6bxf3n65n0eh" path="res://addons/brackeys_3d_game_assets/dungeon_assets/props/candles.glb" id="1_yjgqv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_okvb8"]
+size = Vector3(0.4, 0.8, 0.3)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=537916338]
+
+[node name="candles" parent="." unique_id=60351906 instance=ExtResource("1_yjgqv")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=293006803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09999998, 0.4, 0.05000002)
+shape = SubResource("BoxShape3D_okvb8")

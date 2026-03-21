@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ck8u7v08h3qcl"]
+
+[ext_resource type="PackedScene" uid="uid://lslwbe0ii3h8" path="res://addons/brackeys_3d_game_assets/dungeon_assets/props/coin_stack.glb" id="1_07xo7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5a2lb"]
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1157908020]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=450133410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_5a2lb")
+
+[node name="coin_stack" parent="." unique_id=902867041 instance=ExtResource("1_07xo7")]

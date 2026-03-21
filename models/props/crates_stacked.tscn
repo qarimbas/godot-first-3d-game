@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://brb7wb2lg0lkr"]
+
+[ext_resource type="PackedScene" uid="uid://qsp31ye2ydc5" path="res://addons/brackeys_3d_game_assets/dungeon_assets/props/crates_stacked.glb" id="1_bk03i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_idu58"]
+size = Vector3(1.6, 2, 1.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jcpin"]
+size = Vector3(1.6, 1, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=625495222]
+
+[node name="crates_stacked2" parent="." unique_id=245806951 instance=ExtResource("1_bk03i")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=557855167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20000014, 1, -0.40000004)
+shape = SubResource("BoxShape3D_idu58")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1940694382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19999987, 0.5, 0.49999997)
+shape = SubResource("BoxShape3D_jcpin")
