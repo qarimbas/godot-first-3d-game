@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bijygv5g5gfov" path="res://models/Building/wall_cracked.tscn" id="11_fdnlq"]
 [ext_resource type="PackedScene" uid="uid://d0bwefuspx3v7" path="res://models/props/keyring.tscn" id="12_ee4r6"]
 [ext_resource type="PackedScene" uid="uid://bmtt3sutk8f5c" path="res://models/Building/wall_arched.tscn" id="12_jkdf5"]
+[ext_resource type="PackedScene" uid="uid://dthbu4kpt2348" path="res://addons/brackeys_3d_game_assets/skeleton/skeleton_mage.glb" id="13_3pmx8"]
 [ext_resource type="PackedScene" uid="uid://clvcmyiq3q218" path="res://models/Building/wall_archedwindow_gated.tscn" id="13_wsu2k"]
 [ext_resource type="PackedScene" uid="uid://bc3bv40mer8bf" path="res://models/Building/floor_wood.tscn" id="15_wsu2k"]
 [ext_resource type="PackedScene" uid="uid://dnw6oau20i4p" path="res://models/Building/floor_stone.tscn" id="16_k12tt"]
@@ -286,6 +287,9 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.5,
 
 [node name="StaticBody3D74" parent="Castle" unique_id=1145165611 instance=ExtResource("12_ee4r6")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.700001, 1.1, -1.9999995)
+
+[node name="skeleton_mage" parent="Castle" unique_id=420569711 instance=ExtResource("13_3pmx8")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.5, 0.100000024, -1.6000001)
 
 [node name="Room1" type="StaticBody3D" parent="." unique_id=91811178]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4, 0.5, -4.1000004)
